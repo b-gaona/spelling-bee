@@ -43,6 +43,24 @@ footer p {
   text-align: center;
 }
 
+.bg-orange{
+  background-color: orangered;
+}
+
+.dancing{
+  background-image: url("../img/dancing.gif");
+  background-color: rgb(16, 136, 22);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 9999;
+  top: 0;
+}
+
 .categories {
   height: 5rem;
   display: flex;
@@ -128,31 +146,55 @@ footer p {
 .modal__content {
   background-color: #ffd700;
   min-width: 60%;
-  max-width: 100%;
+  max-width: 85%;
   padding: 2rem;
   border-radius: 5rem;
   box-shadow: 0 2px 4px rgba(#000, 0.2);
   text-align: center;
   z-index: 4;
 }
+
 .modal__info {
   text-align: center;
   font-size: 10rem;
   color: #fff;
+  text-transform: lowercase;
+  padding-inline: 1.5rem;
 }
+
 .modal__button {
   border-radius: 2rem;
   font-size: 2.5rem;
-  background: red;
   width: 12rem;
   display: block;
   margin: 0 auto;
+  padding: 5px 10px;
 }
+
+#btnClose{
+  font-size: 4rem;
+  padding-right: 1.5rem;
+  color: white;
+  font-weight: 900;
+}
+
+#btnClose:hover{
+  color: orangered;
+}
+
+#choose{
+  font-size: 3rem;
+  color: white;
+  text-align: left;
+  padding-left: 4rem;
+}
+
 .modal__button:hover {
   color: #fff;
   background-color: darkred;
   transition: 0.4s all ease-out;
 }
+
 .modal__show {
   display: flex;
 }
